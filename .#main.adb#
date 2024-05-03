@@ -7,7 +7,7 @@ procedure Dinner_Philosophers is
    end Philosopher;
 
    Forks : array (1..5) of Counting_Semaphore(1, Default_Ceiling);
-   Waiter : array (1..2) of Counting_Semaphore(1, Default_Ceiling);
+   Waiter : array (1..2) of Counting_Semaphore(2, Default_Ceiling);
 
    task body Philosopher is
       Id : Integer;
